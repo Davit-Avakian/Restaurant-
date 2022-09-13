@@ -1,0 +1,523 @@
+.Main-Wrapper {
+    display: flex;
+}
+
+/* Menu */
+.Menu-Container {
+    width: 5%;
+    height: 92vh;
+    margin: 40px 0;
+    border-right: 1px solid black;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    position: fixed;
+}
+
+.Menu-Logo {
+    cursor: pointer;
+    width: 32px;
+    margin: 0 auto;
+}
+
+
+.Menu-Buttons-Container button {
+    cursor: pointer;
+    transform: rotate(-90deg);
+    margin-bottom: 140px;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    color: #2a5631;
+}
+
+.Menus-Btn {
+    border: 1px solid #2a5631 !important;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+.Menus-Btn:hover {
+    background-color: #2a5631;
+    color: #ffff;
+}
+
+.Insta-Image {
+    cursor: pointer;
+    width: 24px;
+    margin: 0 auto;
+}
+
+
+/* Main */
+.Main-Container {
+    width: 95%;
+    margin-left: 100px;
+}
+
+/* Header */
+.Header-Background {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+    background-color: #f2e8d8;
+    height: 450px;
+    width: 800px;
+    border-bottom-left-radius: 50%;
+}
+
+.Header-Logo, .Footer-Logo {
+    cursor: pointer;
+    color: #2a5631;
+    font-size: 40px;
+    font: bold;
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+.Header-Container {
+    margin: 30px 20px;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.Ferme-Container {
+    display: flex;
+    background-color: #ffff;
+    border-color: transparent;
+    border-radius: 10px;
+    margin-left: 420px;
+    height: 35px;
+    padding: 5px;
+    font: bold;
+    box-shadow: 0 0 0.5em 0.2em rgb(0 0 0 / 5%);
+}
+
+.Ferme-Text {
+    color: red;
+    margin-right: 20px;
+}
+
+.Red-Dot {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    margin: auto 0;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+.Header-Btn {
+    height: 40px;
+    background-color: #2a5631;
+    color: #ffff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.Header-Btn:hover {
+    background-color: #ffff;
+    color: #2a5631;
+    border: none;
+}
+
+/* Header Title */
+.Header-Title-Container {
+    height: 100px;
+    width: 1000px;
+    margin-left: 100px;
+    position: relative;
+}
+
+.Header-Image {
+    position: absolute;
+    height: 350px;
+    border-radius: 50%;
+    right: 100px;
+    top: -230px;
+    transition: transform 1s ease;
+}
+
+.Header-Image:hover {
+    transform: rotate(10deg);
+}
+
+.Header-Image .Header-Circle-Image {
+    width: 150px;
+    transition: width 1s ease-in;
+}
+
+.Header-Image:hover .Header-Circle-Image {
+    transition: width 1.75s ease-out;
+    width: 300px;
+}
+
+.Header-Circle-Image {
+    position: absolute;
+    right: 20px;
+    top: -220px;
+    width: 150px;
+    z-index: -1;
+}
+
+.Header-Rec-Image {
+    width: 100px;
+    height: 250px;
+    position: absolute;
+    right: 32%;
+    transform: rotate(-45deg);
+    z-index: -1;
+    bottom: -160px;
+}
+
+.Header-Image-Price {
+    color: #2a5631;
+    position: absolute;
+    right: 380px;
+    top: 180px;
+    background-color: #ffff;
+    padding: 15px;
+    border-radius: 5px;
+    font: bold;
+    font-size: 15px;
+    box-shadow: 0 0 0.5em 0.2em rgb(0 0 0 / 5%);
+}
+
+.Title-Text {
+    color: #2a5631;
+    font-size: 50px;
+    width: 550px;
+    font: bold;
+}
+
+/* Menu Items */
+
+.Menu-Item {
+    display: flex;
+    text-align: center;
+    box-shadow: 0 0 0.5em 0.2em rgb(0 0 0 / 5%);
+    padding: 15px;
+    width: 380px;
+    margin-bottom: 10px;
+}
+
+.Menu-Item img {
+    height: 40px;
+}
+
+.Item-Text {
+    color: #2a5631;
+    font: bold;
+}
+
+/* Categories */
+
+.Categories-Container {
+    margin-top: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.Categories-Title {
+    font-size: 60px;
+    color: #2a5631;
+}
+
+.Categories-Button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #2a5631;
+    color: #2a5631;
+    border-radius: 20%;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.Categories-Button:hover {
+    background-color: #2a5631;
+    color: #ffff;
+}
+
+.Categories-Arrows {
+    margin-left: 1400px;
+}
+
+.Left-Arrow, .Right-Arrow {
+    cursor: pointer;
+    font-size: 45px;
+    opacity: .5;
+}
+
+/* Main Dishes */
+.Main-Dishes-Container {
+    margin: 0 !important;
+}
+
+/* Pitas */
+.Pitas-Container, .Salads-Container, .Launch-Container, .Snacks-Container {
+    display: none;
+    width: 100%;
+}
+
+.Dish-Item {
+    border-radius: 10px;
+    box-shadow: 0 0 0.5em 0.2em rgb(0 0 0 / 5%);
+    width: 400px;
+    height: 500px;
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+.Dish-Item:hover .Dish-Desc-Button{
+    transition: display 2s ease-out;
+    display: block;
+}
+
+.Dish-Item:hover .Dish-Desc-Body{
+    transition: display 2s ease-out;
+    display: none;
+}
+
+
+.Dish-Item:hover {
+    background-color: rgb(243, 231, 209);
+}
+
+.Dish-Price {
+    color: #2a5631;
+    font-size: 20px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+}
+
+.Dish-Image {
+    width: 250px;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+
+.Dish-Desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.Dish-Desc-Title {
+    color: #2a5631;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.Dish-Desc-Button {
+    display: none;
+    transition: display 1s ease-in;
+    background-color: #2a5631;
+    color: #ffff;
+    padding: 10px;
+    margin: 20px 0 20px 120px;
+    width: 150px;
+}
+
+.Dish-Desc-Body {
+    margin-top: 15px;
+    transition: display 1s ease-in;
+    display: block;
+}
+
+/* DISCOVER */
+.Discover-Container {
+    display: flex;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.Discover-Images-Container {
+    position: relative;
+}
+
+.Discover-Image {
+    height: 900px;
+}
+
+.Discover-Image2 {
+    width: 320px;
+    position: absolute;
+    bottom: -5%;
+    left: -7%;
+}
+
+.Discover-Image3 {
+    width: 180px;
+    position: absolute;
+    top: -5%;
+    right: -12%;
+}
+
+.Discover-Image4 {
+    position: absolute;
+    bottom: -150px;
+    z-index: 0;
+    left: 100px;
+    width: 200px;
+}
+
+.Discover-Description {
+    margin-left: 60px;
+    margin: auto 50px;
+    width: 700px;
+}
+
+.Discover-Description h1 {
+    color: #2a5631;
+    font-size: 55px;
+}
+
+.Discover-Description button {
+    cursor: pointer;
+    background-color: #2a5631;
+    padding: 12px;
+    border-radius: 7px;
+    color: #ffff;
+}
+
+.Discover-Description button:hover {
+    background-color: #ffff;
+    color: #2a5631;
+}
+
+
+/* FOOTER */
+.Footer-Container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* FOOTER DETAILS */
+.Footer-Details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer-Details span {
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font: bold;
+    margin-right: 40px;
+    max-width: 10px;
+}
+
+.Footer-Details span:hover {
+    opacity: .6;
+}
+
+/* Working-Days-Details */
+.Working-Days-Wrapper {
+    position: relative;
+}
+
+.Working-Days-Details {
+    max-height: 0;
+    transition: max-height 2s ease-out;
+    transition: background-color 0.2s ease-out;
+    overflow: hidden;
+    background-color: #2a5631;
+    position: absolute;
+    top: -365px;
+}
+
+.Working-Days-Wrapper:hover .Working-Days-Details {
+    max-height: 500px;
+    transition: max-height 4s ease-in;
+    transition: background-color 0.5s ease-in;
+    background-color: #ffff;
+}
+
+.Days-Contaier {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Working Days Container */
+.Displayed-Day {
+
+}
+
+.Working-Days {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 7px;
+    border: 1px solid black;
+    height: 50px;
+    width: 550px;
+}
+
+.Down-Arrow {
+    margin-right: 0 !important;
+}
+
+.Working-Days div {
+    border-right: 1px solid black;
+    width: 50%;
+    text-align: center;
+    height: 100%;
+}
+
+.Working-Days-Item1 {
+    display: flex;
+}
+
+.Working-Days-Item1 span {
+    padding: 15px;
+}
+
+.Working-Days-Item2 {
+    padding: 15px;
+}
+
+/* Footer Order */
+.Footer-Order-Online {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer-Logo {
+    margin-top: 60px;
+}
+
+.Order-Online-Container {
+    display: flex;
+    align-items: center;
+}
+
+.Order-Online-Container button {
+    height: 40px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 50px;
+
+    background-color: #2a5631;
+    color: #ffff;
+    border-radius: 7px;
+}
+
+.Order-Online-Container button:hover {
+    background-color: #ffff;
+    color: #2a5631;
+}
+
+/* CopyRight */
+
+.CopyRight-Text {
+    margin-top: 60px;
+    width: 300px;
+    color: grey;
+}
