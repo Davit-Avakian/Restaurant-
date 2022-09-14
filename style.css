@@ -1,5 +1,11 @@
+/* Variables */
+:root {
+    --main-color: #2a5631;
+}
+
 .Main-Wrapper {
     display: flex;
+    overflow-x: hidden;
 }
 
 /* Menu */
@@ -8,7 +14,7 @@
     height: 92vh;
     margin: 40px 0;
     border-right: 1px solid black;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
@@ -29,17 +35,17 @@
     background-color: transparent;
     border: none;
     font-size: 15px;
-    color: #2a5631;
+    color: var(--main-color);
 }
 
 .Menus-Btn {
-    border: 1px solid #2a5631 !important;
+    border: 1px solid var(--main-color) !important;
     border-radius: 15px;
     padding: 5px 15px;
 }
 
 .Menus-Btn:hover {
-    background-color: #2a5631;
+    background-color: var(--main-color);
     color: #ffff;
 }
 
@@ -56,6 +62,10 @@
     margin-left: 100px;
 }
 
+.Header-Main-Container {
+    width: 100%;
+}
+
 /* Header */
 .Header-Background {
     position: absolute;
@@ -68,13 +78,19 @@
     border-bottom-left-radius: 50%;
 }
 
-.Header-Logo, .Footer-Logo {
+.Header-Logo,
+.Footer-Logo {
     cursor: pointer;
-    color: #2a5631;
+    color: var(--main-color);
     font-size: 40px;
     font: bold;
     height: 50px;
     margin-bottom: 50px;
+}
+
+.Header-Logo-Mobile {
+    display: none;
+    height: 40px;
 }
 
 .Header-Container {
@@ -89,10 +105,11 @@
     display: flex;
     background-color: #ffff;
     border-color: transparent;
-    border-radius: 10px;
-    margin-left: 420px;
+    border-radius: 0.375em;
+    margin-left: 455px;
     height: 35px;
     padding: 5px;
+    align-items: center;
     font: bold;
     box-shadow: 0 0 0.5em 0.2em rgb(0 0 0 / 5%);
 }
@@ -108,13 +125,13 @@
     background-color: red;
     margin: auto 0;
     border-radius: 50%;
-    margin-top: 20px;
+    margin-top: 13px;
     margin-right: 5px;
 }
 
 .Header-Btn {
     height: 40px;
-    background-color: #2a5631;
+    background-color: var(--main-color);
     color: #ffff;
     border-radius: 10px;
     padding: 10px;
@@ -122,8 +139,15 @@
 
 .Header-Btn:hover {
     background-color: #ffff;
-    color: #2a5631;
+    color: var(--main-color);
     border: none;
+}
+
+.Menu-Image {
+    cursor: pointer;
+    display: none;
+    height: 35px;
+    width: 45px;
 }
 
 /* Header Title */
@@ -152,11 +176,6 @@
     transition: width 1s ease-in;
 }
 
-.Header-Image:hover .Header-Circle-Image {
-    transition: width 1.75s ease-out;
-    width: 300px;
-}
-
 .Header-Circle-Image {
     position: absolute;
     right: 20px;
@@ -176,7 +195,7 @@
 }
 
 .Header-Image-Price {
-    color: #2a5631;
+    color: var(--main-color);
     position: absolute;
     right: 380px;
     top: 180px;
@@ -188,8 +207,12 @@
     box-shadow: 0 0 0.5em 0.2em rgb(0 0 0 / 5%);
 }
 
+.Header-Image-Price button {
+    display: none;
+}
+
 .Title-Text {
-    color: #2a5631;
+    color: var(--main-color);
     font-size: 50px;
     width: 550px;
     font: bold;
@@ -211,7 +234,7 @@
 }
 
 .Item-Text {
-    color: #2a5631;
+    color: var(--main-color);
     font: bold;
 }
 
@@ -219,38 +242,80 @@
 
 .Categories-Container {
     margin-top: 400px;
+    margin-bottom: 50px;
     width: 100%;
     text-align: center;
+    position: relative;
 }
 
 .Categories-Title {
     font-size: 60px;
-    color: #2a5631;
+    color: var(--main-color);
 }
 
 .Categories-Button {
     cursor: pointer;
     background-color: transparent;
-    border: 1px solid #2a5631;
-    color: #2a5631;
-    border-radius: 20%;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    border-radius: 35px;
     padding: 10px;
     margin-right: 20px;
 }
 
+.pita-btn-number,
+.salad-btn-number,
+.launch-btn-number,
+.snack-btn-number {
+    position: absolute;
+    font-size: 13px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffff;
+    color: var(--main-color);
+}
+
+.pita-btn-number {
+    position: absolute;
+    top: -80%;
+    right: 42%;
+}
+
+.salad-btn-number {
+    position: absolute;
+    top: -80%;
+    right: 13%;
+}
+
+.launch-btn-number {
+    position: absolute;
+    top: -80%;
+    right: 28%;
+}
+
+.snack-btn-number {
+    position: absolute;
+    top: -80%;
+    right: 25%;
+}
+
 .Categories-Button:hover {
-    background-color: #2a5631;
+    background-color: var(--main-color);
     color: #ffff;
 }
 
 .Categories-Arrows {
-    margin-left: 1400px;
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
 }
 
-.Left-Arrow, .Right-Arrow {
+.Left-Arrow,
+.Right-Arrow {
     cursor: pointer;
-    font-size: 45px;
-    opacity: .5;
+    font-size: 40px;
+    opacity: .3;
 }
 
 /* Main Dishes */
@@ -259,39 +324,41 @@
 }
 
 /* Pitas */
-.Pitas-Container, .Salads-Container, .Launch-Container, .Snacks-Container {
-    display: none;
+.Dish-Container {
+    display: flex;
+    overflow-x: hidden;
     width: 100%;
 }
 
 .Dish-Item {
+    cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 0 0.5em 0.2em rgb(0 0 0 / 5%);
-    width: 400px;
-    height: 500px;
+    min-width: 380px;
+    height: 650px;
     position: relative;
     text-align: center;
-    border-radius: 5px;
-    margin-left: 30px;
+    margin-left: 25px;
 }
 
-.Dish-Item:hover .Dish-Desc-Button{
+.Dish-Item:hover .Dish-Desc-Button {
     transition: display 2s ease-out;
     display: block;
 }
 
-.Dish-Item:hover .Dish-Desc-Body{
+.Dish-Item:hover .Dish-Desc-Body {
     transition: display 2s ease-out;
     display: none;
 }
 
 
-.Dish-Item:hover {
+.Dish-Item:hover,
+.View-All-Container:hover {
     background-color: rgb(243, 231, 209);
 }
 
 .Dish-Price {
-    color: #2a5631;
+    color: var(--main-color);
     font-size: 20px;
     position: absolute;
     left: 5px;
@@ -307,28 +374,79 @@
 .Dish-Desc {
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
 }
 
 .Dish-Desc-Title {
-    color: #2a5631;
+    color: var(--main-color);
     font-size: 25px;
     margin-top: 30px;
 }
 
 .Dish-Desc-Button {
+    cursor: pointer;
     display: none;
+    position: absolute;
     transition: display 1s ease-in;
-    background-color: #2a5631;
+    background-color: var(--main-color);
+    border-radius: 0.375em;
     color: #ffff;
     padding: 10px;
-    margin: 20px 0 20px 120px;
-    width: 150px;
+    bottom: 50px;
+    left: 100px;
+    width: 200px;
 }
 
 .Dish-Desc-Body {
     margin-top: 15px;
     transition: display 1s ease-in;
     display: block;
+}
+
+.View-All-Container {
+    cursor: pointer;
+    border-radius: 10px;
+    min-width: 380px;
+    max-height: 650px;
+    margin-left: 25px;
+    border: 1px solid var(--main-color);
+    text-align: center;
+    padding-top: 250px;
+}
+
+.Snack-Item {
+    min-width: 200px;
+    height: 360px;
+    margin-left: 100px;
+}
+
+.Snack-Image {
+    width: 140px;
+}
+
+.Snack-Desc {
+    margin: 0;
+}
+
+.Snack-Button {
+    bottom: 15px;
+    border-radius: 0;
+    left: 0;
+    width: 100%;
+}
+
+.View-All-Container h3 {
+    color: var(--main-color);
+    font-size: 1.25rem;
+}
+
+.View-All-Container button {
+    height: 2.5rem;
+    padding: 0 1em;
+    border: 1px solid var(--main-color);
+    border-radius: 0.375rem;
+    color: var(--main-color);
+    background-color: transparent;
 }
 
 /* DISCOVER */
@@ -375,13 +493,13 @@
 }
 
 .Discover-Description h1 {
-    color: #2a5631;
+    color: var(--main-color);
     font-size: 55px;
 }
 
 .Discover-Description button {
     cursor: pointer;
-    background-color: #2a5631;
+    background-color: var(--main-color);
     padding: 12px;
     border-radius: 7px;
     color: #ffff;
@@ -389,7 +507,7 @@
 
 .Discover-Description button:hover {
     background-color: #ffff;
-    color: #2a5631;
+    color: var(--main-color);
 }
 
 
@@ -423,20 +541,18 @@
     position: relative;
 }
 
-.Working-Days-Details {
+.Working-Days-Wrapper .Working-Days-Details {
     max-height: 0;
-    transition: max-height 2s ease-out;
-    transition: background-color 0.2s ease-out;
+    transition: max-height 1s ease-in, background-color 1s ease-in;
+    background-color: rgb(0, 26, 0);
     overflow: hidden;
-    background-color: #2a5631;
     position: absolute;
-    top: -365px;
+    bottom: 40px;
 }
 
 .Working-Days-Wrapper:hover .Working-Days-Details {
     max-height: 500px;
-    transition: max-height 4s ease-in;
-    transition: background-color 0.5s ease-in;
+    transition: max-height .8s ease-out, background-color 1s ease-out;
     background-color: #ffff;
 }
 
@@ -447,21 +563,31 @@
 }
 
 /* Working Days Container */
-.Displayed-Day {
-
-}
-
 .Working-Days {
     display: flex;
     justify-content: space-between;
     border-radius: 7px;
     border: 1px solid black;
-    height: 50px;
+    height: 40px;
     width: 550px;
 }
 
+.Working-Days-Wrapper .Down-Arrow {
+    transition: transform .4s ease-in;
+    transform: rotate(0deg)
+}
+
+.Working-Days-Wrapper:hover .Down-Arrow {
+    transition: transform .4s ease-out;
+    transform: rotate(180deg)
+}
+
+
 .Down-Arrow {
-    margin-right: 0 !important;
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 15px;
+    height: 15px;
 }
 
 .Working-Days div {
@@ -504,14 +630,14 @@
     margin-top: 15px;
     margin-left: 50px;
 
-    background-color: #2a5631;
+    background-color: var(--main-color);
     color: #ffff;
     border-radius: 7px;
 }
 
 .Order-Online-Container button:hover {
     background-color: #ffff;
-    color: #2a5631;
+    color: var(--main-color);
 }
 
 /* CopyRight */
@@ -520,4 +646,173 @@
     margin-top: 60px;
     width: 300px;
     color: grey;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+
+    /* Header */
+    .Header-Container {
+        justify-content: flex-start;
+    }
+
+    .Ferme-Container {
+        margin: 0 100px;
+    }
+
+    .Header-Image {
+        display: none;
+        background-color: red;
+    }
+
+    /* Header Title */
+    .Header-Title-Container {
+        margin-left: 0;
+    }
+
+    .Title-Text {
+        font-size: 35px;
+    }
+
+    .Header-Background {
+        width: 600px;
+    }
+
+    .Header-Circle-Image {
+        left: 30%;
+    }
+
+    .Header-Rec-Image {
+        left: 45%;
+        z-index: -1;
+        top: -380px;
+    }
+
+    .Header-Image-Price {
+        left: 42%;
+        top: -100%;
+        width: 45px;
+        height: 10px;
+    }
+
+    .Menu-Buttons-Container button {
+        font-size: 11px;
+    }
+
+    .Discover-Image {
+        height: 500px;
+    }
+
+    /* Footer */
+    .Working-Days-Wrapper .Working-Days-Details {
+        bottom: 72px;
+    }
+
+    .Order-Online-Container button {
+        display: none;
+    }
+}
+
+@media (max-width: 950px) {
+
+    /* Menu */
+    .Menu-Container {
+        display: none;
+    }
+
+    /* Header */
+    .Header-Container {
+        position: fixed;
+        top: 0;
+        margin: 0;
+        background-color: #ffff;
+        height: 80px;
+        justify-content: space-between;
+        z-index: 2;
+        width: 800px;
+        min-width: fit-content;
+        flex-wrap: wrap;
+    }
+
+    .Ferme-Container {
+        display: none;
+    }
+
+    .Header-Logo {
+        display: none;
+    }
+
+    .Header-Logo-Mobile {
+        display: block;
+    }
+
+    .Menu-Image {
+        display: block;
+        margin-left: 100px;
+    }
+
+    .Header-Title-Container {
+        display: flex;
+        background-color: #f2e8d8;
+        margin-top: 70px;
+        height: 285px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .Header-Menu {
+        margin: 290px 220px 0 0;
+    }
+
+    .Title-Text {
+        width: 700px;
+        height: 90px;
+    }
+
+    .Header-Image-Price {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        border-radius: .5em;
+        top: 215px;
+        left: 220px;
+        width: 300px;
+        height: 35px;
+        z-index: 1;
+    }
+
+    .Header-Image-Price span {
+        font-size: 20px;
+        font-style: bold;
+        margin-top: 5px;
+    }
+
+    .Header-Image-Price button {
+        display: block;
+        color: var(--main-color);
+        background-color: transparent;
+        border: 1px solid var(--main-color);
+        border-radius: 3.4em;
+        margin-left: 20px;
+    }
+
+    /* Images */
+    .Header-Circle-Image {
+        top: 30px;
+        left: 100px;
+        z-index: 1;
+    }
+
+    .Header-Rec-Image {
+        top: -100px;
+        left: 250px;
+        width: 80px;
+        height: 250px;
+        z-index: 0;
+    }
+
+    .Header-Background {
+        display: none;
+    }
 }

@@ -26,6 +26,8 @@
         <div class="Main-Container">
             <div class="Header-Main-Container">
                 <div class="Header-Container">
+                    <img src="./assets/images/menuLogo.png" class="Header-Logo-Mobile" />
+
                     <p class="Header-Logo">colibri</p>
 
                     <div class="Ferme-Container">
@@ -37,6 +39,9 @@
                     <div class="Header-Background"></div>
 
                     <button class="Header-Btn">COMMANDER EN LIGNE</button>
+
+                    <img src="./assets/images/menuImage.png" class="Menu-Image" />
+
                 </div>
 
                 <div class="Header-Title-Container">
@@ -44,10 +49,13 @@
 
                     <div style="position: relative;">
                         <img src="./assets/images/headerImage.jpg" class="Header-Image" />
-                        <img src="./assets/images/orangeCircle.png" class="Header-Circle-Image"/>
-                        <img src="./assets/images/greenRec.png" class="Header-Rec-Image"/>
+                        <img src="./assets/images/orangeCircle.png" class="Header-Circle-Image" />
+                        <img src="./assets/images/greenRec.png" class="Header-Rec-Image" />
                     </div>
-                    <div class="Header-Image-Price">16.50 $</div>
+                    <div class="Header-Image-Price">
+                        <span>16.50 $</span>
+                        <button>Salades garnies et énergisantes</button>
+                    </div>
 
                     <div class="Header-Menu">
                         <div class="Menu-Item">
@@ -72,10 +80,23 @@
                     <h1 class="Categories-Title">Découvrez le menu</h1>
 
                     <div class="Categories-Nav-Buttons">
-                        <button class="Categories-Button" data-value="pita">PITAS</button>
-                        <button class="Categories-Button" data-value="salad">SALADES GARNIES ET ENERGISANTES</button>
-                        <button class="Categories-Button" data-value="launch">DEJEUNERS</button>
-                        <button class="Categories-Button" data-value="snack">COLLATIONS</button>
+                        <div style="position: relative; display: inline;">
+                            <button class="Categories-Button" data-value="pita">PITAS</button>
+                            <span class="pita-btn-number">5</span>
+                        </div>
+                        <div style="position: relative; display: inline;">
+                            <button class="Categories-Button" data-value="salad">SALADES GARNIES ET
+                                ENERGISANTES</button>
+                            <span class="salad-btn-number">8</span>
+                        </div>
+                        <div style="position: relative; display: inline;">
+                            <button class="Categories-Button" data-value="lunch">DEJEUNERS</button>
+                            <span class="launch-btn-number">4</span>
+                        </div>
+                        <div style="position: relative; display: inline;">
+                            <button class="Categories-Button" data-value="snack">COLLATIONS</button>
+                            <span class="snack-btn-number">2</span>
+                        </div>
                     </div>
 
                     <div class="Categories-Arrows">
@@ -84,207 +105,7 @@
                     </div>
                 </div>
 
-                <div class="Main-Dishes-Container">
-                    <div class="Pitas-Container">
-                        <div class="Dish-Item">
-                            <span class="Dish-Price">10.00$</span>
-
-                            <img src="./assets/images/PitaImage.webp" class="Dish-Image" />
-
-                            <div class="Dish-Desc">
-                                <span class="Dish-Desc-Title">Falafel</span>
-                                <span class="Dish-Desc-Body">Kale, falafel, poivron, tomate, betterave, carotte,
-                                    ciboulette, houmous, fromage végétal, sauce à l’ail.</span>
-                                <button class="Dish-Desc-Button">COMMANDER EN LIGNE</button>
-                            </div>
-                        </div>
-
-                        <div class="Dish-Item">
-                            <span class="Dish-Price">10.00$</span>
-
-                            <img src="./assets/images/PitaImage.webp" class="Dish-Image" />
-
-                            <div class="Pita-Desc">
-                                <span class="Dish-Desc-Title">Tex-Mex</span>
-                                <span class="Dish-Desc-Body">Mélange de riz, laitue frisée, fruit du jacquier BBQ,
-                                    avocat, salsa fraîche, coriandre, cheddar de l’Île-aux-Grues, sauce sud-ouest,
-                                    vinaigrette jalapeños-lime.</span>
-                                <button class="Dish-Desc-Button">COMMANDER EN LIGNE</button>
-                            </div>
-                        </div>
-
-                        <div class="Dish-Item">
-                            <span class="Dish-Price">11.00$</span>
-
-                            <img src="./assets/images/PitaImage.webp" class="Dish-Image" />
-
-                            <div class="Dish-Desc">
-                                <span class="Dish-Desc-Title">Club</span>
-                                <span class="Dish-Desc-Body">Laitue frisée, poulet, roquette, poivron, tomate, bacon,
-                                    cheddar de l’Île-aux-Grues, sauce à l’ail.
-                                </span>
-                                <button class="Dish-Desc-Button">COMMANDER EN LIGNE</button>
-                            </div>
-                        </div>
-
-                        <div class="Dish-Item">
-                            <span class="Dish-Price">12.00$</span>
-
-                            <img src="./assets/images/PitaImage.webp" class="Dish-Image" />
-
-                            <div class="Dish-Desc">
-                                <span class="Dish-Desc-Title">Omble chevalier</span>
-                                <span class="Dish-Desc-Body">Épinard, roquette, salade d'omble, concombre, poivron,
-                                    tomate, olive kalamata, fromage de chèvre, sauce à l'ail, vinaigrette
-                                    grecque.</span>
-                                <button class="Dish-Desc-Button">COMMANDER EN LIGNE</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="Salads-Container">
-                        <div class="Dish-Item">
-                            <span class="Dish-Price">17.00$</span>
-
-                            <img src="./assets/images/SaladImage.webp" class="Dish-Image" />
-
-                            <div class="Dish-Desc">
-                                <span class="Dish-Desc-Title">Kale cesar</span>
-                                <span class="Dish-Desc-Body">Kale, laitue frisée, poulet, patate douce, tomate cerise,
-                                    concombre, bacon, croûton sans gluten, cheddar de l’Île-aux-Grues, citron,
-                                    anchoïade, vinaigrette césar.</span>
-                                <button class="Dish-Desc-Button">COMMANDER EN LIGNE</button>
-                            </div>
-                        </div>
-
-                        <div class="Dish-Item">
-                            <span class="Dish-Price">18.50$</span>
-
-                            <img src="./assets/images/SaladImage.webp" class="Dish-Image" />
-
-                            <div class="Pita-Desc">
-                                <span class="Dish-Desc-Title">Nicoise</span>
-                                <span class="Dish-Desc-Body">Laitue frisée, épinard, salade d’omble chevalier, œuf
-                                    mollet, patate douce, poivron, olive kalamata, ciboulette, fromage de chèvre,
-                                    anchoïade, vinaigrette balsamique.</span>
-                                <button class="Dish-Desc-Button">COMMANDER EN LIGNE</button>
-                            </div>
-                        </div>
-
-                        <div class="Dish-Item">
-                            <span class="Dish-Price">17.00$</span>
-
-                            <img src="./assets/images/SaladImage.webp" class="Dish-Image" />
-
-                            <div class="Dish-Desc">
-                                <span class="Dish-Desc-Title">Taco Libre</span>
-                                <span class="Dish-Desc-Body">Quinoa, kale, fruit du jacquier BBQ, avocat, salsa fraîche,
-                                    coriandre, houmous, chips de tortilla, cheddar de l’Île-aux-Grues, lime, vinaigrette
-                                    jalapeños-lime.
-                                </span>
-                                <button class="Dish-Desc-Button">COMMANDER EN LIGNE</button>
-                            </div>
-                        </div>
-
-                        <div class="Dish-Item">
-                            <span class="Dish-Price">17.00$</span>
-
-                            <img src="./assets/images/SaladImage.webp" class="Dish-Image" />
-
-                            <div class="Dish-Desc">
-                                <span class="Dish-Desc-Title">Israeli</span>
-                                <span class="Dish-Desc-Body">Quinoa, kale, falafel, patate douce, tomate cerise,
-                                    betterave et navet mariné, ciboulette, houmous, fromage de chèvre, vinaigrette
-                                    jalapeños-lime.</span>
-                                <button class="Dish-Desc-Button">COMMANDER EN LIGNE</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="Launch-Container">
-                        <div class="Dish-Item">
-                            <span class="Dish-Price">14.00$</span>
-
-                            <img src="./assets/images/LaunchImage.webp" class="Dish-Image" />
-
-                            <div class="Dish-Desc">
-                                <span class="Dish-Desc-Title">Salade dej</span>
-                                <span class="Dish-Desc-Body">Laitue frisée, kale, œuf mollet, tomate cerise, poivron,
-                                    céleri, bacon, rôtie sans gluten, cheddar de l’Île-aux-Grues, mayo au pesto de
-                                    roquette
-                                </span>
-                                <button class="Dish-Desc-Button">COMMANDER EN LIGNE</button>
-                            </div>
-                        </div>
-
-                        <div class="Dish-Item">
-                            <span class="Dish-Price">14.00$</span>
-
-                            <img src="./assets/images/LaunchImage.webp" class="Dish-Image" />
-
-                            <div class="Pita-Desc">
-                                <span class="Dish-Desc-Title">Dej energisant</span>
-                                <span class="Dish-Desc-Body">Quinoa, épinard, tofu brouillé, patate douce, avocat,
-                                    ciboulette, pois chiche, fromage végétal, sauce sud-ouest.</span>
-                                <button class="Dish-Desc-Button">COMMANDER EN LIGNE</button>
-                            </div>
-                        </div>
-
-                        <div class="Dish-Item">
-                            <span class="Dish-Price">17.00$</span>
-
-                            <img src="./assets/images/LaunchImage.webp" class="Dish-Image" />
-
-                            <div class="Dish-Desc">
-                                <span class="Dish-Desc-Title">Pita dej vegetalien</span>
-                                <span class="Dish-Desc-Body">Pita, épinard, tofu brouillé, patate douce, poivron,
-                                    avocat, oignon vert, simili-bacon végétal, fromage végétal, sauce sud-ouest.
-                                </span>
-                                <button class="Dish-Desc-Button">COMMANDER EN LIGNE</button>
-                            </div>
-                        </div>
-
-                        <div class="Dish-Item">
-                            <span class="Dish-Price">10.00$</span>
-
-                            <img src="./assets/images/LaunchImage.webp" class="Dish-Image" />
-
-                            <div class="Dish-Desc">
-                                <span class="Dish-Desc-Title">Pita-dej</span>
-                                <span class="Dish-Desc-Body">Pita, laitue, œuf mollet, poivron, tomate, oignon vert,
-                                    bacon, cheddar de l’Île-aux-Grues, mayo au pesto de roquette.</span>
-                                <button class="Dish-Desc-Button">COMMANDER EN LIGNE</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="Snacks-Container">
-                        <div class="Dish-Item">
-                            <span class="Dish-Price">1.50$</span>
-
-                            <img src="./assets/images/SnackImage.webp" class="Dish-Image" />
-
-                            <div class="Dish-Desc">
-                                <span class="Dish-Desc-Title">Boule denergie</span>
-                                <span class="Pita-Desc-Body">Chocolat-arachide
-                                </span>
-                                <button class="Dish-Desc-Button">COMMANDER EN LIGNE</button>
-                            </div>
-                        </div>
-
-                        <div class="Dish-Item">
-                            <span class="Dish-Price">4.50$</span>
-
-                            <img src="./assets/images/SnackImage.webp" class="Dish-Image" />
-
-                            <div class="Pita-Desc">
-                                <span class="Dish-Desc-Title">Brownie</span>
-                                <span class="Dish-Desc-Body">Par Mille Cupcake</span>
-                                <button class="Dish-Desc-Button">COMMANDER EN LIGNE</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div class="Main-Dishes-Container"></div>
 
                 <div class="Discover-Container">
                     <div class="Discover-Images-Container">
@@ -369,7 +190,7 @@
 
                             <div class="Working-Days Displayed-Day">
                                 <div class="Working-Days-Item1">
-                                    <span class="Down-Arrow">&#8595;</span>
+                                    <img src="./assets/images/downArrow.png" class="Down-Arrow"></img>
                                     <span style="color: red;">Ferme</span>
                                     <span>Mardi</span>
                                 </div>
@@ -394,7 +215,7 @@
     </div>
 
 
-    <script src="./index.js"></script>
+    <script src="./index.js" type="module"></script>
 </body>
 
 </html>
