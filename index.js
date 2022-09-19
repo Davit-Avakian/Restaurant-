@@ -197,6 +197,7 @@ function startDragging(e, container) {
   startX = e.pageX - container.offsetLeft;
   scrollLeft = container.scrollLeft;
 }
+
 function stopDragging() {
   mouseDown = false;
 }
