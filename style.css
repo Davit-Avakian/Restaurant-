@@ -1,1387 +1,1515 @@
 @font-face {
-    font-family: mediumFont;
-    src: url(./font/TT\ Norms\ Pro\ Medium.ttf);
+  font-family: mediumFont;
+  src: url(./font/TT\ Norms\ Pro\ Medium.ttf);
 }
 
 @font-face {
-    font-family: boldFont;
-    src: url(./font/TT\ Norms\ Pro\ Bold.ttf);
+  font-family: boldFont;
+  src: url(./font/TT\ Norms\ Pro\ Bold.ttf);
 }
 
 @font-face {
-    font-family: lightFont;
-    src: url(./font/TT\ Norms\ Pro\ Light.ttf);
+  font-family: lightFont;
+  src: url(./font/TT\ Norms\ Pro\ Light.ttf);
 }
 
 /* Variables */
 :root {
-    --main-color: #2a5631;
-    --btn-radius: 0.375em;
-    --btn-shadow: 0 0 0.5em 0.2em rgb(0 0 0 / 5%);
+  --main-color: #2a5631;
+  --btn-radius: 0.375em;
+  --btn-shadow: 0 0 0.5em 0.2em rgb(0 0 0 / 5%);
 }
 
 .Main-Wrapper {
-    display: flex;
-    overflow: hidden;
+  display: flex;
+  overflow: hidden;
 }
 
 /* Menu */
 .Menu-Container {
-    width: 5%;
-    height: 92vh;
-    margin: 40px 0;
-    border-right: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    position: fixed;
+  width: 5%;
+  height: 92vh;
+  margin: 40px 0;
+  border-right: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  position: fixed;
 }
 
 .Menu-Logo {
-    cursor: pointer;
-    width: 32px;
-    margin: 0 auto;
+  cursor: pointer;
+  width: 32px;
+  margin: 0 auto;
 }
 
-
 .Menu-Buttons-Container button {
-    cursor: pointer;
-    transform: rotate(-90deg);
-    margin-bottom: 140px;
-    background-color: transparent;
-    border: none;
-    font-size: 15px;
-    color: var(--main-color);
+  cursor: pointer;
+  transform: rotate(-90deg);
+  margin-bottom: 140px;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  color: var(--main-color);
 }
 
 .Menus-Btn {
-    border: 1px solid var(--main-color) !important;
-    border-radius: 15px;
-    padding: 5px 15px;
+  border: 1px solid var(--main-color) !important;
+  border-radius: 15px;
+  padding: 5px 10px;
 }
 
 .Menus-Btn:hover {
-    background-color: var(--main-color);
-    color: #ffff;
+  background-color: var(--main-color);
+  color: #ffff;
 }
 
 .Menu-Image1,
 .Menu-Image2,
 .Menu-Image3 {
-    display: none;
+  display: none;
 }
 
 .Insta-Image {
-    cursor: pointer;
-    width: 24px;
-    margin: 0 auto;
+  cursor: pointer;
+  width: 24px;
+  margin: 0 auto;
 }
-
 
 /* Main */
 .Main-Container {
-    width: 95%;
-    margin-left: 100px;
+  width: 95%;
+  margin-left: 100px;
 }
 
 .Header-Main-Container {
-    width: 100%;
+  width: 100%;
 }
 
 /* Header */
 .Header-Background {
-    position: absolute;
-    z-index: -1;
-    right: 0;
-    top: 0;
-    background-color: #f2e8d8;
-    height: 450px;
-    width: 800px;
-    border-bottom-left-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+  background-color: #f2e8d8;
+  height: 450px;
+  width: 800px;
+  border-bottom-left-radius: 50%;
+}
+
+.Header-Images-Container {
+  position: relative;
+  width: 100%;
 }
 
 .Header-Logo,
 .Footer-Logo {
-    cursor: pointer;
-    color: var(--main-color);
-    font-size: 30px;
-    height: 50px;
-    margin-bottom: 30px;
-    font-family: boldFont;
+  cursor: pointer;
+  color: var(--main-color);
+  font-size: 30px;
+  height: 50px;
+  margin-bottom: 30px;
+  font-family: boldFont;
 }
 
 .Header-Logo-Mobile {
-    display: none;
-    height: 40px;
+  display: none;
+  height: 40px;
 }
 
 .Header-Container {
-    margin: 30px 20px;
-    min-width: 95%;
-    height: 10%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 35%;
-    justify-content: space-between;
-    text-align: center;
+  margin: 30px 20px;
+  min-width: 95%;
+  height: 10%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-basis: 35%;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .Ferme-Container {
-    display: flex;
-    background-color: #ffff;
-    font-family: lightFont;
-    border-color: transparent;
-    border-radius: var(--btn-radius);
-    margin-left: 455px;
-    height: 35px;
-    padding: 3px 30px;
-    align-items: center;
-    font: bold;
-    font-size: 14px;
-    box-shadow: 0 0 0.5em 0.2em rgb(0 0 0 / 5%);
+  display: flex;
+  background-color: #ffff;
+  font-family: lightFont;
+  border-color: transparent;
+  border-radius: var(--btn-radius);
+  margin-left: 455px;
+  height: 35px;
+  padding: 3px 30px;
+  align-items: center;
+  font: bold;
+  font-size: 14px;
+  box-shadow: 0 0 0.5em 0.2em rgb(0 0 0 / 5%);
 }
 
 .Ferme-Text {
-    color: red;
-    margin-right: 20px;
+  color: red;
+  margin-right: 20px;
 }
 
 .Red-Dot {
-    width: 10px;
-    height: 10px;
-    background-color: red;
-    margin: auto 0;
-    border-radius: 50%;
-    margin-top: 13px;
-    margin-right: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  margin: auto 0;
+  border-radius: 50%;
+  margin-top: 13px;
+  margin-right: 5px;
 }
 
 .Header-Btn {
-    height: 18px;
-    background-color: var(--main-color);
-    color: #ffff;
-    border-radius: var(--btn-radius);
-    padding: 9px 15px;
-    padding-top: 14px;
-    font-size: 13px;
+  height: 18px;
+  background-color: var(--main-color);
+  color: #ffff;
+  border-radius: var(--btn-radius);
+  padding: 9px 15px;
+  padding-top: 14px;
+  font-size: 13px;
+  margin-right: 45px;
 }
 
 .Header-Btn:hover {
-    background-color: #ffff;
-    color: var(--main-color);
-    border: none;
+  background-color: #ffff;
+  color: var(--main-color);
+  border: none;
 }
 
 .Menu-Image {
-    cursor: pointer;
-    display: none;
-    height: 35px;
-    width: 45px;
+  cursor: pointer;
+  display: none;
+  height: 35px;
+  width: 45px;
 }
 
 /* Header Title */
 .Header-Title-Container {
-    height: 100px;
-    width: 1000px;
-    margin-left: 100px;
-    position: relative;
+  height: 100px;
+  width: 1000px;
+  margin-left: 100px;
+  position: relative;
 }
 
 .Header-Image {
-    position: absolute;
-    height: 350px;
-    border-radius: 50%;
-    right: 100px;
-    top: -230px;
-    transition: transform 1s ease;
+  position: absolute;
+  height: 350px;
+  border-radius: 50%;
+  right: 100px;
+  top: -230px;
+  transition: transform 1s ease;
 }
 
 .Header-Image:hover {
-    transform: rotate(10deg);
+  transform: rotate(10deg);
 }
 
 .Header-Image .Header-Circle-Image {
-    width: 150px;
-    transition: width 1s ease-in;
+  width: 150px;
+  transition: width 1s ease-in;
 }
 
 .Header-Circle-Image {
-    position: absolute;
-    right: 20px;
-    top: -220px;
-    width: 150px;
-    z-index: -1;
+  position: absolute;
+  right: 20px;
+  top: -220px;
+  width: 150px;
+  z-index: -1;
 }
 
 .Header-Rec-Image {
-    width: 100px;
-    height: 250px;
-    position: absolute;
-    right: 32%;
-    transform: rotate(-45deg);
-    z-index: -1;
-    bottom: -160px;
+  width: 100px;
+  height: 250px;
+  position: absolute;
+  right: 32%;
+  transform: rotate(-45deg);
+  z-index: -1;
+  bottom: -160px;
 }
 
 .Header-Image-Price {
-    color: var(--main-color);
-    position: absolute;
-    right: 380px;
-    top: 180px;
-    background-color: #ffff;
-    padding: 15px;
-    border-radius: 5px;
-    font: bold;
-    font-size: 15px;
-    box-shadow: 0 0 0.5em 0.2em rgb(0 0 0 / 5%);
+  color: var(--main-color);
+  position: absolute;
+  right: 380px;
+  top: 180px;
+  background-color: #ffff;
+  padding: 15px;
+  border-radius: 5px;
+  font: bold;
+  font-size: 15px;
+  box-shadow: 0 0 0.5em 0.2em rgb(0 0 0 / 5%);
 }
 
 .Header-Image-Price button {
-    display: none;
+  display: none;
 }
 
 .Title-Text {
-    color: var(--main-color);
-    font-size: 50px;
-    width: 550px;
-    font: bold;
+  color: var(--main-color);
+  font-size: 50px;
+  width: 550px;
+  font: bold;
 }
 
 /* Menu Items */
 .Menu-Item {
-    display: flex;
-    text-align: center;
-    box-shadow: 0 0 0.5em 0.2em rgb(0 0 0 / 5%);
-    padding: 15px;
-    width: 380px;
-    margin-bottom: 10px;
-    font-family: lightFont;
+  display: flex;
+  text-align: center;
+  box-shadow: 0 0 0.5em 0.2em rgb(0 0 0 / 5%);
+  padding: 15px;
+  width: 380px;
+  margin-bottom: 10px;
+  font-family: lightFont;
 }
 
 .Menu-Item img {
-    height: 40px;
+  height: 40px;
 }
 
 .Item-Text {
-    color: var(--main-color);
-    font: bold;
+  color: var(--main-color);
+  font: bold;
 }
 
 /* Categories */
 
 .Categories-Container {
-    margin-top: 300px;
-    margin-bottom: 50px;
-    width: 100%;
-    text-align: center;
-    position: relative;
+  margin-top: 300px;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+  position: relative;
 }
 
 .Categories-Title {
-    font-size: 60px;
-    color: var(--main-color);
-    font-family: boldFont;
+  font-size: 60px;
+  color: var(--main-color);
+  font-family: boldFont;
+  margin-top: 500px;
 }
 
 .Categories-Button {
-    cursor: pointer;
-    background-color: transparent;
-    border: 1px solid var(--main-color);
-    color: var(--main-color);
-    border-radius: 35px;
-    padding: 10px;
-    margin: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  border-radius: 35px;
+  padding: 10px;
+  margin: 10px;
 }
 
 .pita-btn-number,
 .salad-btn-number,
 .launch-btn-number,
 .snack-btn-number {
-    position: absolute;
-    font-size: 13px;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #ffff;
-    color: var(--main-color);
+  position: absolute;
+  font-size: 13px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ffff;
+  color: var(--main-color);
 }
 
 .pita-btn-number {
-    position: absolute;
-    top: -80%;
-    right: 42%;
+  position: absolute;
+  top: -80%;
+  right: 42%;
 }
 
 .salad-btn-number {
-    position: absolute;
-    top: -80%;
-    right: 13%;
+  position: absolute;
+  top: -80%;
+  right: 13%;
 }
 
 .launch-btn-number {
-    position: absolute;
-    top: -80%;
-    right: 28%;
+  position: absolute;
+  top: -80%;
+  right: 28%;
 }
 
 .snack-btn-number {
-    position: absolute;
-    top: -80%;
-    right: 25%;
+  position: absolute;
+  top: -80%;
+  right: 25%;
 }
 
 .Categories-Button:hover {
-    background-color: var(--main-color);
-    color: #ffff;
+  background-color: var(--main-color);
+  color: #ffff;
 }
 
 .Categories-Arrows {
-    position: absolute;
-    right: 5%;
-    bottom: 15%;
+  display: inline-block;
 }
 
 .Left-Arrow,
 .Right-Arrow {
-    cursor: pointer;
-    font-size: 40px;
-    opacity: .3;
+  cursor: pointer;
+  font-size: 40px;
+  opacity: 0.3;
 }
 
 /* Main Dishes */
 .Main-Dishes-Container {
-    margin: 0 !important;
+  margin: 0 !important;
 }
 
 /* Pitas */
 .Dish-Container {
-    display: flex;
-    overflow-x: hidden;
-    width: 100%;
+  display: flex;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .Dish-Item {
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 0 0 0.5em 0.2em rgb(0 0 0 / 5%);
-    min-width: 380px;
-    height: 580px;
-    position: relative;
-    text-align: center;
-    margin-left: 25px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 0.5em 0.2em rgb(0 0 0 / 5%);
+  min-width: 380px;
+  height: 580px;
+  position: relative;
+  text-align: center;
+  margin-left: 25px;
 }
 
 .Dish-Item:hover .Dish-Desc-Button {
-    transition: opacity .8s ease-out;
-    opacity: 1;
+  transition: opacity 0.8s ease-out;
+  opacity: 1;
 }
 
 .Dish-Item:hover .Dish-Desc-Body {
-    transition: opacity .3s ease-out;
-    opacity: 0;
+  transition: opacity 0.3s ease-out;
+  opacity: 0;
 }
-
 
 .Dish-Item:hover,
 .View-All-Container:hover {
-    background-color: rgb(243, 231, 209);
+  background-color: rgb(243, 231, 209);
 }
 
 .Dish-Price {
-    color: var(--main-color);
-    position: absolute;
-    left: 25px;
-    top: 25px;
-    font-family: boldFont;
+  color: var(--main-color);
+  position: absolute;
+  left: 25px;
+  top: 25px;
+  font-family: boldFont;
 }
 
 .Dish-Image {
-    width: 250px;
-    border-radius: 50%;
-    margin-top: 100px;
+  width: 250px;
+  border-radius: 50%;
+  margin-top: 100px;
 }
 
 .Dish-Desc {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
 
 .Dish-Desc-Title {
-    color: var(--main-color);
-    font-size: 25px;
-    margin-top: 30px;
-    transition: opacity 3s ease-in;
-    font-family: mediumFont;
+  color: var(--main-color);
+  font-size: 25px;
+  margin-top: 30px;
+  transition: opacity 3s ease-in;
+  font-family: mediumFont;
 }
 
 .Dish-Desc-Button {
-    cursor: pointer;
-    opacity: 0;
-    transition: opacity .3s ease-out;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
 
-    position: absolute;
-    background-color: var(--main-color);
-    border-radius: var(--btn-radius);
-    color: #ffff;
-    padding: 10px;
-    bottom: 50px;
-    left: 22%;
-    width: 200px;
+  position: absolute;
+  background-color: var(--main-color);
+  border-radius: var(--btn-radius);
+  color: #ffff;
+  padding: 10px;
+  bottom: 50px;
+  left: 22%;
+  width: 200px;
 }
 
 .Dish-Desc-Body {
-    margin-top: 15px;
-    transition: opacity .7s ease-out;
-    display: block;
-    font-family: lightFont;
+  margin-top: 15px;
+  transition: opacity 0.7s ease-out;
+  display: block;
+  font-family: lightFont;
 }
 
 .View-All-Container {
-    cursor: pointer;
-    border-radius: 10px;
-    min-width: 380px;
-    max-height: 650px;
-    margin-left: 25px;
-    border: 1px solid var(--main-color);
-    text-align: center;
-    padding-top: 250px;
+  cursor: pointer;
+  border-radius: 10px;
+  min-width: 380px;
+  max-height: 650px;
+  margin-left: 25px;
+  border: 1px solid var(--main-color);
+  text-align: center;
+  padding-top: 250px;
 }
 
 .Snack-Item {
-    min-width: 200px;
-    height: 360px;
-    margin-left: 100px;
+  min-width: 200px;
+  height: 360px;
+  margin-left: 100px;
 }
 
 .Snack-Image {
-    width: 140px;
+  width: 140px;
 }
 
 .Snack-Desc {
-    margin: 0;
+  margin: 0;
 }
 
 .Snack-Button {
-    bottom: 15px;
-    border-radius: 0;
-    left: 0;
-    width: 100%;
+  bottom: 15px;
+  border-radius: 0;
+  left: 0;
+  width: 100%;
 }
 
 .View-All-Container h3 {
-    color: var(--main-color);
-    font-size: 1.25rem;
+  color: var(--main-color);
+  font-size: 1.25rem;
 }
 
 .View-All-Container button {
-    height: 2.5rem;
-    padding: 0 1em;
-    border: 1px solid var(--main-color);
-    border-radius: var(--btn-radius);
-    color: var(--main-color);
-    background-color: transparent;
+  height: 2.5rem;
+  padding: 0 1em;
+  border: 1px solid var(--main-color);
+  border-radius: var(--btn-radius);
+  color: var(--main-color);
+  background-color: transparent;
 }
 
 /* DISCOVER */
 .Discover-Container {
-    display: flex;
-    padding: 50px;
-    margin-bottom: 50px;
+  display: flex;
+  padding: 50px;
+  margin-bottom: 50px;
 }
 
 .Discover-Images-Container {
-    position: relative;
+  position: relative;
 }
 
 .Discover-Image {
-    height: 900px;
+  height: 900px;
 }
 
 .Discover-Image2 {
-    width: 320px;
-    position: absolute;
-    bottom: -5%;
-    left: -7%;
+  width: 320px;
+  position: absolute;
+  bottom: -5%;
+  left: -7%;
 }
 
 .Discover-Image3 {
-    width: 180px;
-    position: absolute;
-    top: -5%;
-    right: -12%;
+  width: 180px;
+  position: absolute;
+  top: -5%;
+  right: -12%;
 }
 
 .Discover-Image4 {
-    position: absolute;
-    bottom: -150px;
-    z-index: 0;
-    left: 100px;
-    width: 200px;
+  position: absolute;
+  bottom: -150px;
+  z-index: 0;
+  left: 100px;
+  width: 200px;
 }
 
 .Discover-Description {
-    margin-left: 60px;
-    margin: auto 50px;
-    width: 700px;
+  margin-left: 60px;
+  margin: auto 50px;
+  width: 700px;
 }
 
 .Discover-Description h1 {
-    color: var(--main-color);
-    font-size: 55px;
+  color: var(--main-color);
+  font-size: 55px;
 }
 
 .Discover-Description span {
-    height: 18px;
-    background-color: var(--main-color);
-    color: #ffff;
-    border-radius: var(--btn-radius);
-    padding: 14px 17px;
-    font-size: 13px;
-    box-shadow: var(--btn-shadow);
+  height: 18px;
+  background-color: var(--main-color);
+  color: #ffff;
+  border-radius: var(--btn-radius);
+  padding: 14px 17px;
+  font-size: 13px;
+  box-shadow: var(--btn-shadow);
 }
 
 .Discover-Description span:hover {
-    background-color: #ffff;
-    color: var(--main-color);
+  background-color: #ffff;
+  color: var(--main-color);
 }
-
 
 /* FOOTER */
 .Footer-Container {
-    position: relative;
-    margin: 0 auto;
-    width: 90%;
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
 }
 
 /* FOOTER DETAILS */
 .Footer-Details {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .Footer-Details span {
-    cursor: pointer;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 15px;
-    font: bold;
-    margin-right: 40px;
-    max-width: fit-content;
-    font-family: lightFont;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  font: bold;
+  margin-right: 40px;
+  max-width: fit-content;
+  font-family: lightFont;
 }
 
 .Footer-Details span:hover {
-    opacity: .6;
+  opacity: 0.6;
 }
 
 /* Working-Days-Details */
 .Working-Days-Wrapper {
-    position: relative;
-    box-sizing: border-box;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .Working-Days-Wrapper .Working-Days-Details {
-    display: grid;
-    max-height: 0;
-    max-width: 100%;
-    width: 100%;
-    transition: max-height .8s ease-in, background-color .8s linear;
-    background-color: rgb(0, 26, 0);
-    overflow: hidden;
-    position: absolute;
-    bottom: 39px;
+  display: grid;
+  max-height: 0;
+  max-width: 100%;
+  width: 100%;
+  transition: max-height 0.8s ease-in, background-color 0.8s linear;
+  background-color: rgb(0, 26, 0);
+  overflow: hidden;
+  position: absolute;
+  bottom: 39px;
 }
 
 .Working-Days-Wrapper:hover .Working-Days-Details {
-    max-height: 500px;
-    transition: max-height .8s ease-out, background-color .8s linear;
-    background-color: #ffff;
+  max-height: 500px;
+  transition: max-height 0.8s ease-out, background-color 0.8s linear;
+  background-color: #ffff;
 }
 
 .Days-Contaier {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 /* Working Days Container */
 .Working-Days {
-    box-sizing: border-box;
-    display: flex;
-    border: .3px solid black;
-    border-bottom: none;
-    height: 40px;
-    width: 500px;
+  box-sizing: border-box;
+  display: flex;
+  border: 0.3px solid black;
+  border-bottom: none;
+  height: 40px;
+  width: 500px;
 }
 
 .Working-Days:last-child {
-    border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .Working-Days > :first-child {
-    border-right: 1px solid black;
-    min-width: 50%;
+  border-right: 1px solid black;
+  min-width: 50%;
 }
 
 .Working-Days > span {
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 }
 
 .Working-Days:first-child {
-    border-top-left-radius: var(--btn-radius);
-    border-top-right-radius: var(--btn-radius);
+  border-top-left-radius: var(--btn-radius);
+  border-top-right-radius: var(--btn-radius);
 }
 
 .Displayed-Day {
-    border-radius: var(--btn-radius);
+  border-radius: var(--btn-radius);
 }
 
 .Displayed-Day .Working-Days-Item1 {
-    min-width: 50%;
-    box-sizing: border-box;
+  min-width: 50%;
+  box-sizing: border-box;
 }
 
-
 .Displayed-Day .Working-Days-Item2 {
-    box-sizing: border-box;
-    height: 10px;
-    justify-content: flex-end;
+  box-sizing: border-box;
+  height: 10px;
+  justify-content: flex-end;
 }
 
 .Displayed-Day .Working-Days-Item2 span {
-    margin: 0;
+  margin: 0;
 }
 
 .Working-Days-Details {
-    max-width: 80vw;
+  max-width: 80vw;
 }
 
 .Working-Days-Wrapper .Down-Arrow {
-    transition: transform .4s ease-in;
-    transform: rotate(0deg)
+  transition: transform 0.4s ease-in;
+  transform: rotate(0deg);
 }
 
 .Working-Days-Wrapper:hover .Down-Arrow {
-    transition: transform .4s ease-out;
-    transform: rotate(180deg)
+  transition: transform 0.4s ease-out;
+  transform: rotate(180deg);
 }
 
-
 .Down-Arrow {
-    margin-top: 15px;
-    margin-left: 15px;
-    width: 15px;
-    height: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 15px;
+  height: 15px;
 }
 
 .Working-Days div {
-    width: 50%;
-    text-align: center;
-    height: 100%;
+  width: 50%;
+  text-align: center;
+  height: 100%;
 }
 
 .Displayed-Day .Working-Days-Item1 {
-    border-right: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .Working-Days-Item1 {
-    display: flex;
-    min-width: 50%;
-    max-width: 50%;
-    min-height: fit-content;
+  display: flex;
+  min-width: 50%;
+  max-width: 50%;
+  min-height: fit-content;
 }
 
 .Working-Days-Item1 span {
-    display: flex;
-    align-items: center;
-    font-size: 13px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
 }
 
 .Working-Days-Item1 img {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .Working-Days-Item2 {
-    display: flex;
-    align-items: center;
-    min-width: 259;
-    min-height: fit-content;
-    max-height: fit-content;
+  display: flex;
+  align-items: center;
+  min-width: 259;
+  min-height: fit-content;
+  max-height: fit-content;
 }
 
 .Working-Days-Item2 span {
-    font-size: 13px;
-    padding-left: 75px;
-    height: 100%;
-    width: 100%;
+  font-size: 13px;
+  padding-left: 75px;
+  height: 100%;
+  width: 100%;
 }
 
 .Displayed-Day .Working-Days-Item2 {
-    padding: 15px;
+  padding: 15px;
 }
 
-.Displayed-Day .Working-Days-Item2 span{
-    padding: 15px;
-    margin: 0 auto;
+.Displayed-Day .Working-Days-Item2 span {
+  padding: 15px;
+  margin: 0 auto;
 }
 
 /* Footer Order */
 .Footer-Order-Online {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .Footer-Logo {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 
 .Order-Online-Container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .Order-Online-Container button {
-    height: 40px;
-    padding: 5px;
-    margin-top: 15px;
-    margin-left: 50px;
+  height: 40px;
+  padding: 5px;
+  margin-top: 15px;
+  margin-left: 50px;
 
-    background-color: var(--main-color);
-    color: #ffff;
-    border-radius: 7px;
+  background-color: var(--main-color);
+  color: #ffff;
+  border-radius: 7px;
 }
 
 .Order-Online-Container button:hover {
-    background-color: #ffff;
-    color: var(--main-color);
+  background-color: #ffff;
+  color: var(--main-color);
 }
 
-.Order-Online-Btn {     
-    height: 18px;
-    background-color: var(--main-color);
-    color: #ffff;
-    border-radius: var(--btn-radius);
-    padding: 9px 15px;
-    padding-top: 14px;
-    font-size: 13px;
-    margin-left: 60px;
-    margin-top: 20px;
-    box-shadow: var(--btn-shadow);
+.Order-Online-Btn {
+  height: 18px;
+  background-color: var(--main-color);
+  color: #ffff;
+  border-radius: var(--btn-radius);
+  padding: 9px 15px;
+  padding-top: 14px;
+  font-size: 13px;
+  margin-left: 60px;
+  margin-top: 20px;
+  box-shadow: var(--btn-shadow);
 }
 
 .Order-Online-Btn:hover {
-    background: #ffff;
-    color: var(--main-color);
+  background: #ffff;
+  color: var(--main-color);
 }
 
 .Footer-Mobile {
-    position: fixed !important;
-    bottom: 0;
-    margin-left: 150px;
+  position: fixed !important;
+  bottom: 0;
+  margin-left: 150px;
 }
 
 /* CopyRight */
 
 .CopyRight-Text {
-    margin-top: 60px;
-    width: 300px;
-    color: grey;
+  margin-top: 60px;
+  width: 300px;
+  color: grey;
 }
 
 /* Media Queries */
 
 @media (max-width: 1200px) {
+  .Categories-Title {
+    margin-top: 400px;
+  }
 
-    /* Header */
-    .Header-Container {
-        justify-content: space-between;
-    }
+  /* Header */
+  .Header-Container {
+    justify-content: space-between;
+  }
 
-    .Ferme-Container {
-        margin: 0 100px;
-    }
+  .Ferme-Container {
+    margin: 0 100px;
+  }
 
-    .Header-Image {
-        display: none;
-        background-color: red;
-    }
+  .Header-Image {
+    height: 150px;
+    left: 50%;
+    top: -150px;
+  }
 
-    /* Header Title */
-    .Header-Title-Container {
-        margin-left: 0;
-    }
+  /* Header Title */
+  .Header-Title-Container {
+    margin-left: 0;
+  }
 
-    .Title-Text {
-        font-size: 35px;
-    }
+  .Title-Text {
+    font-size: 35px;
+    width: 40%;
+  }
 
-    .Header-Background {
-        width: 600px;
-    }
+  .Header-Background {
+    width: 600px;
+  }
 
-    .Header-Circle-Image {
-        left: 30%;
-    }
+  .Header-Circle-Image {
+    width: 100px;
+    right: 30%;
+    top: -150px;
+  }
 
-    .Header-Rec-Image {
-        left: 45%;
-        z-index: -1;
-        top: -380px;
-    }
+  .Header-Rec-Image {
+    left: 45%;
+    z-index: -1;
+    top: -200px;
+    left: 50%;
+  }
 
-    .Header-Image-Price {
-        left: 42%;
-        top: -100%;
-        width: 45px;
-        height: 10px;
-    }
+  .Header-Image-Price {
+    height: 10px;
+    width: 46px;
+    font-size: 12px;
+    top: 70%;
+    left: 50%;
+  }
 
-    .Menu-Buttons-Container button {
-        font-size: 11px;
-    }
+  .Menu-Buttons-Container button {
+    font-size: 11px;
+  }
 
-    .Discover-Image {
-        height: 500px;
-    }
+  .Discover-Image {
+    height: 500px;
+  }
 
-    /* Footer */
-    .Working-Days-Wrapper .Working-Days-Details {
-        bottom: 50px;
-    }
+  /* Footer */
+  .Working-Days-Wrapper .Working-Days-Details {
+    bottom: 50px;
+  }
 
-    .Order-Online-Container button {
-        display: none;
-    }
+  .Order-Online-Container button {
+    display: none;
+  }
 }
 
 @media (max-width: 950px) {
+  .Header-Image {
+    top: 40%;
+    left: 25%;
+    height: 250px;
+    z-index: 1;
+  }
 
-    /* Menu */
-    .Menu-Container {
-        display: none;
-        background-color: #ffff;
-        z-index: 5;
-        position: fixed;
-        top: 4%;
-        width: 100%;
-    }
+  .Header-Image-Price {
+    margin-left: 250px;
+  }
 
-    .Menu-Buttons-Container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 200px;
-    }
+  .Header-Circle-Image {
+    display: none;
+  }
 
-    .Menu-Buttons-Container button {
-        font-size: 15px;
-    }
+  .Header-Rec-Image {
+    margin-top: 280px;
+  }
 
-    .Menu-Image1 {
-        position: absolute;
-        bottom: 30%;
-        left: -8%;
+  .Header-Menu {
+    position: absolute;
+    top: 43%;
+    left: 26%;
+  }
+  .Header-Title-Container {
+    height: 400px !important;
+  }
 
-        display: block;
-        width: 250px;
-    }
+  .Title-Text {
+    position: absolute;
+    width: 100%;
+    left: 10%;
+  }
 
-    .Menu-Image2 {
-        position: absolute;
-        z-index: -1;
-        opacity: .5;
+  .Categories-Title {
+    margin-top: 800px !important;
+    margin-right: 200px;
+  }
 
-        display: block;
-        width: 150px;
-        bottom: 30%;
-        left: -8%;
-    }
+  /* Menu */
+  .Menu-Container {
+    display: none;
+    background-color: #ffff;
+    z-index: 5;
+    position: fixed;
+    top: 4%;
+    width: 100%;
+  }
 
-    .Menu-Image3 {
-        display: block;
-        width: 150px;
+  .Menu-Buttons-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+  }
 
-        position: absolute;
-        right: -8%;
-        top: 5%;
-    }
+  .Menu-Buttons-Container button {
+    font-size: 15px;
+  }
 
-    .Insta-Image {
-        border: 1px solid var(--main-color);
-        padding: 15px;
-        border-radius: 50%;
-    }
+  .Menu-Image1 {
+    position: absolute;
+    bottom: 30%;
+    left: -8%;
 
-    .Footer-Container {
-        z-index: 6;
-    }
+    display: block;
+    width: 250px;
+  }
 
-    .Menu-Buttons-Container button {
-        transform: rotate(0);
-        width: 80px;
-        margin: 0;
-        margin-bottom: 40px;
-    }
+  .Menu-Image2 {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
 
-    .Menu-Logo {
-        display: none;
-    }
+    display: block;
+    width: 150px;
+    bottom: 30%;
+    left: -8%;
+  }
 
-    .Main-Container {
-        position: relative;
-    }
+  .Menu-Image3 {
+    display: block;
+    width: 150px;
 
-    /* Header */
-    .Header-Container {
-        position: fixed;
-        top: 0;
-        left: 0;
-        margin: 0;
-        background-color: #ffff;
-        height: 70px;
-        z-index: 2;
-        width: 100%;
-        justify-content: space-around;
-        align-items: center;
-        min-width: fit-content;
-        padding: 15px;
-    }
+    position: absolute;
+    right: -8%;
+    top: 5%;
+  }
 
-    .Ferme-Container {
-        padding: 0;
-    }
+  .Insta-Image {
+    border: 1px solid var(--main-color);
+    padding: 15px;
+    border-radius: 50%;
+  }
 
-    .Header-Logo {
-        display: none;
-    }
+  .Footer-Container {
+    z-index: 6;
+  }
 
-    .Header-Logo-Mobile {
-        display: block;
-    }
+  .Menu-Buttons-Container button {
+    transform: rotate(0);
+    width: 80px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
 
-    .Menu-Image {
-        display: block;
-        margin-left: 100px;
-    }
+  .Menu-Logo {
+    display: none;
+  }
 
-    .Header-Title-Container {
-        display: flex;
-        position: absolute;
-        top: 1%;
-        left: -10%;
-        background-color: #f2e8d8;
-        margin-top: 70px;
-        height: 285px;
-        width: 100vw;
-        text-align: center;
-    }
+  .Main-Container {
+    position: relative;
+  }
 
-    .Header-Menu {
-        margin: 290px 220px 0 0;
-    }
+  /* Header */
+  .Header-Container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-color: #ffff;
+    height: 70px;
+    z-index: 2;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    min-width: fit-content;
+    padding: 15px;
+  }
 
-    .Title-Text {
-        width: 700px;
-        height: 90px;
-    }
+  .Ferme-Container {
+    padding: 0;
+  }
 
-    .Header-Image-Price {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        border-radius: .5em;
-        top: 215px;
-        left: 220px;
-        width: 300px;
-        height: 35px;
-        z-index: 1;
-    }
+  .Header-Logo {
+    display: none;
+  }
 
-    .Header-Image-Price span {
-        font-size: 20px;
-        font-style: bold;
-        margin-top: 5px;
-    }
+  .Header-Logo-Mobile {
+    display: block;
+  }
 
-    .Header-Image-Price button {
-        display: block;
-        color: var(--main-color);
-        background-color: transparent;
-        border: 1px solid var(--main-color);
-        border-radius: 3.4em;
-        margin-left: 20px;
-    }
+  .Menu-Image {
+    display: block;
+    margin-left: 100px;
+  }
 
-    /* Images */
-    .Header-Circle-Image {
-        top: 30px;
-        left: 100px;
-        z-index: 1;
-    }
+  .Header-Title-Container {
+    display: flex;
+    position: absolute;
+    top: 1%;
+    left: -10%;
+    background-color: #f2e8d8;
+    margin-top: 70px;
+    height: 285px;
+    width: 100vw;
+    text-align: center;
+  }
 
-    .Header-Rec-Image {
-        top: -100px;
-        left: 250px;
-        width: 80px;
-        height: 250px;
-        z-index: 0;
-    }
+  .Header-Menu {
+    margin: 290px 220px 0 0;
+  }
 
-    .Header-Background {
-        display: none;
-    }
+  .Title-Text {
+    width: 700px;
+    height: 90px;
+  }
 
-    /* Categories */
-    .Categories-Container {
-        margin-top: 700px;
-    }
+  .Header-Image-Price {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 0.5em;
+    top: 145px;
+    left: 220px;
+    width: 300px;
+    height: 35px;
+    z-index: 1;
+  }
 
-    .Categories-Title {
-        font-size: 30px;
-        position: absolute;
-        left: 20%;
-        height: 50px;
-    }
+  .Header-Image-Price span {
+    font-size: 20px;
+    font-style: bold;
+    margin-top: 5px;
+  }
 
-    .Categories-Nav-Buttons {
-        position: relative;
-        bottom: -100px;
-        left: -100px;
-        margin-bottom: 150px;
-    }
+  .Header-Image-Price button {
+    display: block;
+    color: var(--main-color);
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    border-radius: 3.4em;
+    margin-left: 20px;
+  }
 
-    .Categories-Arrows {
-        position: relative;
-        left: -120px;
-    }
+  /* Images */
+  .Header-Circle-Image {
+    top: 30px;
+    left: 100px;
+    z-index: 1;
+  }
 
-    /* Dish Container */
-    .Dish-Container {
-        position: relative;
-        left: -100px;
-    }
+  .Header-Rec-Image {
+    top: -100px;
+    left: 250px;
+    width: 80px;
+    height: 250px;
+    z-index: 0;
+  }
 
-    /* Discover */
-    .Discover-Container {
-        position: relative;
-        left: -140px;
-    }
+  .Header-Background {
+    display: none;
+  }
 
-    /* Footer */
-    .Footer-Container {
-        position: relative;
-        left: -100px;
-        font-size: 0.10em;
-    }
+  .Title-Text {
+    position: relative;
+  }
 
-    .CopyRight-Text {
-        font-size: 15px;
+  /* Categories */
+  .Categories-Container {
+    margin-top: 900px;
+  }
+
+  .Categories-Title {
+    font-size: 30px;
+  }
+
+  .Categories-Nav-Buttons {
+    position: relative;
+    bottom: -100px;
+    left: -100px;
+    margin-bottom: 150px;
+  }
+
+  /* Dish Container */
+  .Dish-Container {
+    position: relative;
+    left: -100px;
+  }
+
+  /* Discover */
+  .Discover-Container {
+    position: relative;
+    left: -140px;
+  }
+
+  /* Footer */
+  .Footer-Container {
+    position: relative;
+    left: -100px;
+    font-size: 0.1em;
+  }
+
+  .CopyRight-Text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 891px) {
+    .Working-Days-Details {
+        bottom: 75px !important;
     }
 }
 
 @media (max-width: 800px) {
-    /* Header */
-    .Ferme-Container {
-        display: none;
+  .Header-Menu {
+    position: absolute;
+    left: 7%;
+  }
+
+  /* Header */
+  .Header-Title-Container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Ferme-Container {
+    display: none;
+  }
+
+  .Title-Text {
+    position: static;
+  }
+
+  .Header-Images-Container {
+    margin-top: 50px;
+  }
+
+  .Header-Image {
+    height: 200px;
+    position: absolute;
+    left: 20%;
+    top: -10%;
+  }
+
+  .Header-Image-Price {
+    margin-left: 0;
+    width: fit-content;
+    position: absolute;
+    top: 38%;
+    left: 20%;
+  }
+
+  .Header-Image-Price > button {
+    border: none;
+  }
+
+  .Header-Circle-Image {
+    display: none;
+  }
+
+  .Header-Rec-Image {
+    position: absolute;
+    left: 20%;
+    top: -250px;
+    height: 200px;
+  }
+
+  /* Categories */
+  .Categories-Arrows {
+    display: none;
+  }
+
+  /* Dish Container */
+  .Dish-Container {
+    flex-wrap: wrap;
+  }
+
+  .Dish-Desc-Button {
+    left: 31%;
+  }
+
+  /* Discover */
+  .Discover-Container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .Discover-Image {
+    width: 100%;
+    height: 700px;
+  }
+
+  .Discover-Image2 {
+    height: 190px;
+  }
+
+  .Discover-Image3 {
+    height: 100px;
+    width: 100px;
+    left: 25%;
+  }
+
+  .Discover-Image4 {
+    height: 120px;
+    width: 80px;
+    bottom: 0;
+  }
+
+  .Discover-Description {
+    width: 80%;
+    margin-top: 50px;
+  }
+
+  .Discover-Description h1 {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .Discover-Description span {
+    width: 180px;
+    margin-left: 200px;
+  }
+
+  /* Footer */
+  .Footer-Details {
+    flex-direction: column;
+    width: 100%;
+    gap: 50px;
+  }
+
+  .Working-Days {
+    width: 100%;
+  }
+
+  .Working-Days-Wrapper .Working-Days-Details {
+    bottom: 40px !important;
+  }
+}
+
+@media (max-width: 714px) {
+    .Categories-Nav-Buttons :nth-child(4) span {
+        top: 43px;
+        right: 200px;
+    }
+}
+
+@media (max-width: 590px) {
+    .Categories-Nav-Buttons :nth-child(4) span {
+        top: -15px;
+        right: 30px;
     }
 
-    .Header-Btn {
-        margin-left: 50px;
+    .Categories-Nav-Buttons :nth-child(3) span {
+        top: 43px;
+        right: 210px;
     }
+}
 
-    /* Categories */
-    .Categories-Arrows {
-        display: none;
-    }
-
-    /* Dish Container */
-    .Dish-Container {
-        flex-wrap: wrap;
-    }
-
-    .Dish-Desc-Button {
-        left: 31%;
-    }
-
-    /* Discover */
-    .Discover-Container {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .Discover-Image {
-        width: 100%;
-        /* height: 400px; */
-    }
-
-    .Discover-Image2 {
-        height: 190px;
-    }
-
-    .Discover-Image3 {
-        height: 100px;
-        width: 100px;
-        left: 25%;
-    }
-
-    .Discover-Image4 {
-        height: 120px;
-        width: 80px;
-        bottom: 0;
-    }
-
-    .Discover-Description {
-        width: 80%;
-    }
-
-    .Discover-Description h1 {
-        width: 100%;
-        font-size: 30px;
-    }
-
-    .Discover-Description span {
-        width: 180px;
-        margin-left: 200px;
-    }
-
-    /* Footer */
-    .Footer-Details {
-        flex-direction: column;
-        width: 100%;
-        gap: 50px;
-    }
-
-    .Working-Days-Wrapper .Working-Days-Details {
-        bottom: 40px;
+@media (max-width: 700px) {
+    .Title-Text {
+        max-width: 80%;
     }
 }
 
 @media (max-width: 600px) {
-    /* Menu */
-    .Menu-Item {
-        width: 200%;
-    }
+  /* Header */
+  .Header-Title-Container {
+    left: -25%;
+  }
 
-    /* Header */
-    .Header-Title-Container {
-        left: -25%;
-    }
+  .Header-Menu {
+    position: absolute;
+    left: 8%;
+  }
 
-    .Header-Menu {
-        position: absolute;
-        left: 7%;
-    }
+  .Title-Text {
+    font-size: 30px;
+    max-width: 80%;
+    margin-left: 50px;
+  }
 
-    .Title-Text {
-        font-size: 30px;
-    }
+  .Header-Btn {
+    box-shadow: var(--btn-shadow);
+    margin-left: 50px;
+  }
 
-    .Header-Image-Price {
-        position: absolute;
-        left: 7%;
-    }
+  /* Categories */
+  .Categories-Title {
+    width: 80%;
+    position: absolute;
+    top: -800px;
+    left: -50px;
+  }
 
-    .Header-Circle-Image {
-        position: sticky;
-        width: 100px;
-        top: 250px;
-        left: 300px;
-    }
+  /* Dishe Item */
+  .Dish-Container {
+    margin-left: 30px;
+  }
 
-    .Header-Rec-Image {
-        position: sticky;
-        top: -80px;
-        height: 200px;
-        width: 50px;
-    }
+  .Dish-Item {
+    min-width: 170px;
+    height: 290px;
+    margin: 0 0 35px 45px;
+  }
 
-    .Header-Btn {
-        box-shadow: var(--btn-shadow);
-    }
+  .Dish-Image {
+    width: 120px;
+    margin-top: 50px;
+  }
 
-    /* Categories */
-    .Categories-Title {
-        font-size: 20px;
-    }
+  .Dish-Desc-Body {
+    display: none;
+  }
 
-    /* Dishe Item */
-    .Dish-Container {
-        margin-left: 30px;
-    }
+  .Dish-Desc-Title {
+    margin-top: 0;
+    font-size: 20px;
+  }
 
-    .Dish-Item {
-        min-width: 170px;
-        height: 290px;
-        margin: 0 0 35px 45px;
-    }
+  .Dish-Price {
+    font-size: 15px;
+  }
 
-    .Dish-Image {
-        width: 120px;
-        margin-top: 50px;
-    }
+  .Dish-Item:hover .Dish-Desc-Button {
+    display: block;
+    width: 70%;
+    height: 30px;
+    left: 15%;
+    overflow: hidden;
+    padding-bottom: 18px;
+  }
 
-    .Dish-Desc-Body {
-        display: none;
-    }
+  .Dish-Item:hover .Dish-Desc-Title {
+    display: none;
+  }
 
-    .Dish-Desc-Title {
-        margin-top: 0;
-        font-size: 20px;
-    }
+  .View-All-Container {
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+    padding: 0;
+    padding: 60px 0 60px;
+  }
 
-    .Dish-Price {
-        font-size: 15px;
-    }
+  .View-All-Container h3 {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 
-    .Dish-Item:hover .Dish-Desc-Button {
-        display: block;
-        width: 70%;
-        height: 30px;
-        left: 15%;
-        overflow: hidden;
-        padding-bottom: 18px;
-    }
+  /* Discover */
+  .Discover-Description span {
+    width: 180px;
+    margin-left: 80px;
+  }
 
-    .Dish-Item:hover .Dish-Desc-Title {
-        display: none;
-    }
+  /* Footer */
+  .Footer-Container {
+    left: -20%;
+    width: 100%;
+  }
 
-    .View-All-Container {
-        margin-top: 20px;
-        height: 50px;
-        display: flex;
-        padding: 0;
-        padding: 60px 0 60px;
-    }
+  .Working-Days {
+    margin: 0;
+  }
 
-    .View-All-Container h3 {
-        margin-left: 50px;
-        margin-right: 50px;
-    }
+  .Working-Days-Wrapper .Working-Days-Details {
+    transition: max-height 0.8s ease-in;
+    background-color: #ffff;
+  }
 
-    /* Discover */
-    .Discover-Description span {
-        width: 180px;
-        margin-left: 80px;
-    }
+  .Working-Days-Wrapper:hover .Working-Days-Details {
+    transition: max-height 0.8s ease-out;
+  }
 
-    /* Footer */
-    .Footer-Container {
-        left: -20%;
-        width: 100%;
-    }
+  .Working-Days,
+  .Displayed-Day {
+    width: 90%;
+    margin-left: 20px;
+  }
 
-    .Working-Days, .Displayed-Day {
-        width: 90%;
-        margin-left: 20px;
-    }
+  .Order-Online-Btn {
+    display: none;
+  }
 
-    .Order-Online-Btn {
-        display: none;
-    }
+  .CopyRight-Text {
+    margin-left: 40px;
+  }
 
-    .CopyRight-Text {
-        margin-left: 40px;
-    }
-
-    .Footer-Mobile {
-        left: -23%;
-    }
+  .Footer-Mobile {
+    left: -23%;
+  }
 }
 
-@media(max-width: 500px) {
-    .Title-Text {
-        width: 100%;
-        margin-left: 20px;
-        margin-top: 50px;
-        font-family: boldFont;
-    }
+@media (max-width: 500px) {
+  .Title-Text {
+    width: 100%;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: boldFont;
+  }
 
-    .Dish-Container {
-        justify-content: center;
-        margin: 0;
-    }
+  .Header-Image-Price {
+    margin-top: 50px;
+  }
 
-    /* Menu-Images */
-    .Menu-Image1 {
-        width: 150px;
-        bottom: 35%;
-        left: -10%;
-    }
+  .Header-Menu {
+    left: 0;
+  }
 
-    .Menu-Image2 {
-        width: 100px;
-        bottom: 35%;
-        left: -10%;
-    }
+  .Header-Btn {
+    font-size: 10px;
+    padding: 10px;
+  }
 
-    .Menu-Image3 {
-        width: 120px;
-    }
+  .Menu-Image {
+    margin-right: 50px;
+  }
 
-    .Title-Text {
-        font-size: 20px;
-    }
+  .Dish-Container {
+    justify-content: center;
+    margin: 0;
+  }
 
-    /* Discover */
-    .Discover-Container {
-        margin-left: 10px;
-    }
+  /* Menu-Images */
+  .Menu-Image1 {
+    width: 150px;
+    bottom: 35%;
+    left: -10%;
+  }
 
-    .Working-Days > :last-child {
-        padding-left: 0;
-    }
+  .Menu-Image2 {
+    width: 100px;
+    bottom: 35%;
+    left: -10%;
+  }
+
+  .Menu-Image3 {
+    width: 120px;
+  }
+
+  /* Discover */
+  .Discover-Container {
+    margin-left: 10px;
+  }
+
+  .Discover-Image {
+    height: 500px;
+  }
+
+  .Working-Days > :last-child {
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 430px) {
-    /* Dishes */
-    .Dish-Item {
-        min-width: 250px;
-        position: block;
-    }
+  /* Dishes */
+  .Dish-Item {
+    min-width: 250px;
+    position: block;
+  }
 
-    /* Header */
-    .Header-Title-Container {
-        left: -120px;
-    }
+  /* Categories */
+  .Categories-Title {
+    font-size: 25px;
+  }
 
-    /* Categories */
-    .Categories-Title {
-        font-size: 25px;
-        position: relative;
-        top: 100px;
-        left: -100px;
-    }
+  .View-All-Container {
+    display: none;
+  }
 
-    .View-All-Container {
-        display: none;
-    }
+  .Dish-Container {
+    margin-left: 0;
+  }
 
-    .Dish-Container {
-        margin-left: 0;
-    }
+  .Dish-Item {
+    max-width: 100px;
+  }
 
-    .Dish-Item {
-        max-width: 100px;
-    }
+  /* Discover */
+  .Discover-Description span {
+    width: 180px;
+    margin-left: 40px;
+  }
 
-    /* Discover */
-    .Discover-Description span {
-        width: 180px;
-        margin-left: 40px;
-    }
+  /* Footer */
+  .Footer-Details > div > span {
+    display: block;
+    margin-bottom: 15px;
+  }
 
-    /* Footer */
-    .Footer-Details > div > span {
-        display: block;
-        margin-bottom: 15px;
-    }
-
-    .Footer-Mobile {
-        left: -35%;
-    }
+  .Footer-Mobile {
+    left: -35%;
+  }
 }
