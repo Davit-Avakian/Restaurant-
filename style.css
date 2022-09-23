@@ -20,6 +20,10 @@
   --btn-shadow: 0 0 0.5em 0.2em rgb(0 0 0 / 5%);
 }
 
+body {
+  margin: 0;
+}
+
 .Main-Wrapper {
   display: flex;
   overflow: hidden;
@@ -162,6 +166,7 @@
 
 .Header-Btn {
   height: 18px;
+  min-width: fit-content;
   background-color: var(--main-color);
   color: #ffff;
   border-radius: var(--btn-radius);
@@ -261,6 +266,7 @@
   width: 380px;
   margin-bottom: 10px;
   font-family: lightFont;
+  background-color: #ffff;
 }
 
 .Menu-Item img {
@@ -498,7 +504,7 @@
 }
 
 .Discover-Image {
-  height: 900px;
+  height: 570px;
 }
 
 .Discover-Image2 {
@@ -531,7 +537,7 @@
 
 .Discover-Description h1 {
   color: var(--main-color);
-  font-size: 55px;
+  font-size: 35px;
 }
 
 .Discover-Description span {
@@ -852,10 +858,6 @@
     font-size: 11px;
   }
 
-  .Discover-Image {
-    height: 500px;
-  }
-
   /* Footer */
   .Working-Days-Wrapper .Working-Days-Details {
     bottom: 50px;
@@ -1018,11 +1020,11 @@
     display: flex;
     position: absolute;
     top: 1%;
-    left: -10%;
+    left: -20%;
     background-color: #f2e8d8;
     margin-top: 70px;
     height: 285px;
-    width: 100vw;
+    width: 120vw;
     text-align: center;
   }
 
@@ -1126,12 +1128,26 @@
 }
 
 @media (max-width: 891px) {
-    .Working-Days-Details {
-        bottom: 75px !important;
-    }
+  .Working-Days-Details {
+    bottom: 75px !important;
+  }
 }
 
 @media (max-width: 800px) {
+  .Header-Container {
+    width: 100% !important;
+    justify-content: space-between !important;
+  }
+
+  .Header-Btn {
+    margin-right: 0;
+    margin-left: 100px;
+  }
+
+  .Menu-Image {
+    margin-right: 10px;
+  }
+
   .Header-Menu {
     position: absolute;
     left: 7%;
@@ -1205,19 +1221,14 @@
     width: 100%;
   }
 
-  .Discover-Image {
-    width: 100%;
-    height: 700px;
-  }
-
   .Discover-Image2 {
     height: 190px;
   }
 
   .Discover-Image3 {
-    height: 100px;
-    width: 100px;
-    left: 25%;
+    height: 150px;
+    width: 150px;
+    left: 70%;
   }
 
   .Discover-Image4 {
@@ -1258,28 +1269,28 @@
 }
 
 @media (max-width: 714px) {
-    .Categories-Nav-Buttons :nth-child(4) span {
-        top: 43px;
-        right: 200px;
-    }
+  .Categories-Nav-Buttons :nth-child(4) span {
+    top: 43px;
+    right: 200px;
+  }
 }
 
 @media (max-width: 590px) {
-    .Categories-Nav-Buttons :nth-child(4) span {
-        top: -15px;
-        right: 30px;
-    }
+  .Categories-Nav-Buttons :nth-child(4) span {
+    top: -15px;
+    right: 30px;
+  }
 
-    .Categories-Nav-Buttons :nth-child(3) span {
-        top: 43px;
-        right: 210px;
-    }
+  .Categories-Nav-Buttons :nth-child(3) span {
+    top: 43px;
+    right: 210px;
+  }
 }
 
 @media (max-width: 700px) {
-    .Title-Text {
-        max-width: 80%;
-    }
+  .Title-Text {
+    max-width: 80%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1301,7 +1312,6 @@
 
   .Header-Btn {
     box-shadow: var(--btn-shadow);
-    margin-left: 50px;
   }
 
   /* Categories */
@@ -1414,9 +1424,8 @@
 @media (max-width: 500px) {
   .Title-Text {
     width: 100%;
-    margin-left: 50px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    position: relative;
+    left: -8%;
     font-family: boldFont;
   }
 
@@ -1430,11 +1439,12 @@
 
   .Header-Btn {
     font-size: 10px;
-    padding: 10px;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
   }
 
   .Menu-Image {
-    margin-right: 50px;
+    margin-right: 150px;
   }
 
   .Dish-Container {
@@ -1471,9 +1481,17 @@
   .Working-Days > :last-child {
     padding-left: 0;
   }
+
+  .Working-Days > span {
+    min-width: fit-content;
+  }
 }
 
 @media (max-width: 430px) {
+  .Header-Btn {
+    margin-left: 80px;
+  }
+
   /* Dishes */
   .Dish-Item {
     min-width: 250px;
