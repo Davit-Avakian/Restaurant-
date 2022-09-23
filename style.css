@@ -1122,6 +1122,15 @@ body {
     font-size: 0.1em;
   }
 
+  .Working-Days:first-child {
+    border-top-left-radius: .4rem;
+    border-top-right-radius: .4rem;
+  }
+
+  .Displayed-Day {
+    border-radius: .4rem;
+  }
+
   .CopyRight-Text {
     font-size: 15px;
   }
@@ -1222,7 +1231,8 @@ body {
   }
 
   .Discover-Image2 {
-    height: 190px;
+    height: 250px;
+    width: 250px;
   }
 
   .Discover-Image3 {
@@ -1232,8 +1242,8 @@ body {
   }
 
   .Discover-Image4 {
-    height: 120px;
-    width: 80px;
+    height: 13em;
+    width: 8em;
     bottom: 0;
   }
 
@@ -1264,7 +1274,12 @@ body {
   }
 
   .Working-Days-Wrapper .Working-Days-Details {
-    bottom: 40px !important;
+    bottom: 38px !important;
+  }
+
+  .Order-Online-Btn {
+    min-width: fit-content;
+    margin-right: 100px;
   }
 }
 
@@ -1272,6 +1287,10 @@ body {
   .Categories-Nav-Buttons :nth-child(4) span {
     top: 43px;
     right: 200px;
+  }
+
+  .Order-Online-Btn {
+    display: none;
   }
 }
 
